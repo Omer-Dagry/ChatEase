@@ -1,5 +1,5 @@
 # ChatEase
-My twelfth grade project
+My twelfth grade project - communication app (messages, voice messages, files & calls)
 
 ----------------------------------------------------------------------
 
