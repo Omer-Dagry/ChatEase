@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>ChatEase</title>
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body class="disable_text_selection" oncontextmenu="return false;">
+    <!-- Box to contain the entire app -->
+    <div id="box">
+      <!-- Grid for left side (chat buttons) and right side (chat) -->
+      <div id="grid">
+        <!-- Left Side -->
+        <div id="left">
+          <!-- Profile & Settings -->
+          <div id="profile-setting_box">
+            <div id="profile-setting">
+              <button id="user-profile-picture" title="Profile Picture" onclick="upload_profile_picture()"></button>
+              <ion-icon name="chatbox-outline" id="StartNewChat" title="Start new chat" onclick="toggle_chats_users()"></ion-icon>
+              <!-- <ion-icon name="people-circle-outline"></ion-icon> -->
+              <ion-icon name="settings" id="setting-button" title="Settings" onclick="settings()"></ion-icon>
+            </div>
+          </div>
+          <!-- Search Chats -->
+          <div id="search_bar_box">
+            <input placeholder="Search" onkeyup="search()" id="search_chat">
+            <hr id="search_bar_chat_list_sep">
+          </div>
+          <!-- Chats -->
+          <div class="chats_list"></div>
+        </div>
+        <!-- Seperator between left side and right side -->
+        <div id="left_right_sep"></div>
+        <!-- Right Side -->
+        <div id="right">
+          <!-- Chat Status Bar -->
+          <div id="chat_status_box" class="disable_text_selection">
+            <div id="chat_status_bar">
+              <!-- Picture -->
+              <div id="status-bar-picture"></div>
+              <div id="status-name-last-seen-box">
+                <!-- Name -->
+                <div class="enable_text_selection" id="status-bar-name"></div>
+                <!-- Last Seen (only for 1 on 1 chats) -->
+                <div id="status-bar-last-seen"></div>
+              </div>
+              <!--  -->
+              <ion-icon name="call" id="call_btn" onclick="make_call()" title="Start a call"></ion-icon>
+            </div>
+          </div>
+          <!-- The Chat itself -->
+          <div id="chat" class="enable_text_selection" onscroll="check_pos()"></div>
+          <!-- Chats Actions (e.g send msg, file & emoji) -->
+          <div id="chat_actions">
+            <div id="left_side_actions">
+              <ion-icon name="document" id="upload_file" onclick="send_file(get_open_chat_id())" title="Upload File"></ion-icon>
+              <ion-icon name="happy-outline" id="emoji_drawer_btn" onclick="toggleEmojis()" title="Emoji"></ion-icon>
+            </div>
+            
+            <div id="input_box">
+              <textarea id="msg_input" cols="50" rows="5" placeholder="Type a message"></textarea>
+            </div>
+
+            <div id="right_side_actions">
+              <ion-icon name="mic-outline" id="record_msg" onclick="start_recording()" title="Start recording"></ion-icon>
+              <ion-icon name="send-outline" id="send_msg" onclick="send_message()" title="Send"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--                          Other Files (javascript & css)                        -->
+    <link rel="stylesheet" href="ChatEase.css">
+    <!-- Part of eel, this file isn't in webroot, it's handled by eel -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <!-- Contains the 2 types of messages (faster to copy than create each time) -->
+    <script type="text/javascript" src="messages.js"></script>
+    <!-- The client that connectes to the eel python program -->
+    <script type="text/javascript" src="ChatEase.js"></script>
+    <!-- Disable Double & Triple Click Text Selection -->
+    <!-- <script type="text/javascript" src="selection.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+      adjust_msgs_input_width()
+    </script>
+    <!-- Disable going back -->
+    <script type = "text/javascript" > history.pushState(null, null, location.href); history.back(); history.forward(); window.onpopstate = function () { history.go(1); }; </script>
+  </body>
+</html>
