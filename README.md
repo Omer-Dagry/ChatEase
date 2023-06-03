@@ -52,6 +52,9 @@ In case you don't want to run the exe and you prefer running the python files di
 To create a chat with someone press the chat button next to the settings button, after that you need to make the user you want to start a chat with "known to you", so enter his email in the input next to the search button and hit Search, after that select the user from the list and hit create, if you choose multiple users it will create a group.
 ### Change profile picture
 Click on your profile picture at the top left of the screen and choose a new one from your files.
+### Make A Call
+1. Enter a chat/group
+2. Press the phone button
 
 ----------------------------------------------------------------------
 
