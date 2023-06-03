@@ -13,3 +13,13 @@ In case you don't want to run the exe and you prefer running the python files di
 2. Tested on python version 3.11.2
 3. To run the server, run the server main file - ServerGUI.py (in server folder)
 4. To run the client, run the client main file - ChatEaseGUI.py (in client folder)
+
+
+![Login Page](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/Login Page.png?raw=true)
+![Signup Page](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/Signup Page.png?raw=true)
+![Signup Page - Confirmation code](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/Signup Page - Confirmation code.png?raw=true)
+![Reset Password Page](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/Reset Password Page.png?raw=true)
+![Reset Password Page - Confirmation code](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/Reset Password Page - Confirmation code.png?raw=true)
+![The App - Chats](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/The App - Chats.png?raw=true)
+![The App - Create New Chats](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/The App - Create New Chats.png?raw=true)
+![Server GUI](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/Server GUI.png?raw=true)
