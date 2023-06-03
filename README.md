@@ -3,6 +3,12 @@ My twelfth grade project
 
 ----------------------------------------------------------------------
 
+# Contents Table
+1. [How To Start The Server & Client](#How-To-Start-The-Server-&-Client)
+3. [How To Use The App](#How-To-Use-The-App)
+4. [Photos Of The App](#Photos-Of-The-App)
+
+----------------------------------------------------------------------
 
 # How To Start The Server & Client
 
@@ -17,23 +23,23 @@ In case you don't want to run the exe and you prefer running the python files di
 3. To run the server, run the server main file - ServerGUI.py (in server folder)
 4. To run the client, run the client main file - ChatEaseGUI.py (in client folder)
 
-
+----------------------------------------------------------------------
 
 # How To Use The App
 
-## Signup
+## Signup Page
 1. Enter your email (must be a valid email)
 2. Enter your desired username
 3. Enter the password you want
 4. Press Signup
 5. Enter the confirmation code that was sent to your email
 
-## Login
+## Login Page
 1. Enter your email
 2. Enter your username
 3. Press Login
 
-## Reset Password
+## Reset Password Page
 1. Enter your email
 2. Enter your username
 3. Press Reset Password
@@ -41,12 +47,15 @@ In case you don't want to run the exe and you prefer running the python files di
 5. Enter your new password
 6. Press Submit
 
-## The App
+## The App Page
 ### Create New Chat/Group
 To create a chat with someone press the chat button next to the settings button, after that you need to make the user you want to start a chat with "known to you", so enter his email in the input next to the search button and hit Search, after that select the user from the list and hit create, if you choose multiple users it will create a group.
 ### Change profile picture
 Click on your profile picture at the top left of the screen and choose a new one from your files.
 
+----------------------------------------------------------------------
+
+# Photos Of The App
 ![Login Page](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/Login%20Page.png?raw=true)
 ![Signup Page](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/Signup%20Page.png?raw=true)
 ![Signup Page - Confirmation code](https://github.com/Omer-Dagry/ChatEase/blob/main/Photos/Signup%20Page%20-%20Confirmation%20code.png?raw=true)
