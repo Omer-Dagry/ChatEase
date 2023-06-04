@@ -1,5 +1,5 @@
 # ChatEase
-My twelfth grade project - communication app (messages, voice messages, files & calls)
+My twelfth grade project (2022 - 2023) - communication app (messages, voice messages, files & calls)
 
 ----------------------------------------------------------------------
 
