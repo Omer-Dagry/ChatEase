@@ -20,8 +20,8 @@ In case you don't want to run the exe and you prefer running the python files di
 
 1. Both in client & server folder there is a file called requirements.txt which specifies all the libraries that you need to install for python.
 2. Tested on python version 3.11.2
-3. To run the server, run the server main file - ServerGUI.py (in server folder)
-4. To run the client, run the client main file - ChatEaseGUI.py (in client folder)
+3. To run the server, first make sure that in the same directory as ServerGUI.py you have the folder "Data" and inside that you have the folder "Server_Data" which contains "default_group_picture.png" and then run the server main file - ServerGUI.py (located in "server" folder) 
+5. To run the client, run the client main file - ChatEaseGUI.py (located in "client" folder)
 
 ----------------------------------------------------------------------
 
